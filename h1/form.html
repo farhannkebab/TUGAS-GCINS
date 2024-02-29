@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1,
+        h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h3>Sign Up Form</h3>
+    <form>
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Last name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender">
+        <label for="male">Male</label>
+        <br>
+        <input type="radio" id="female" name="gender">
+        <label for="female">Female</label>
+        <br>
+        <input type="radio" id="other" name="gender">
+        <label for="other">Other</label>
+
+        <label for="nationality">Nationality:</label>
+        <select id="nationality" name="nationality">
+            <option value="Indonesia">Indonesia</option>
+        </select>
+
+        <label>Language Spoken:</label>
+        <input type="checkbox" id="bahasa" name="language">
+        <label for="bahasa">Bahasa Indonesia</label>
+        <br>
+        <input type="checkbox" id="english" name="language">
+        <label for="english">English</label>
+        <br>
+        <input type="checkbox" id="otherLang" name="language">
+        <label for="otherLang">Other</label>
+
+        <label for="bio">Bio:</label>
+        <textarea id="bio" name="bio" rows="5"></textarea>
+
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+
+</html>
