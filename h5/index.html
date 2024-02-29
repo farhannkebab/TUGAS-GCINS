@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String Exercises</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            text-align: center;
+            color: #f1eaea;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 0 auto 30px;
+            width: 80%;
+            max-width: 500px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Latihan String</h1>
+    </header>
+    <div class="card">
+        <label for="formSentence">Form Sentence</label>
+        <p id="formSentence"></p>
+    </div>
+    <div class="card">
+        <label for="breakSentence">Break Sentence</label>
+        <p id="firstWord"></p>
+        <p id="secondWord"></p>
+        <p id="thirdWord"></p>
+        <p id="fourthWord"></p>
+        <p id="fifthWord"></p>
+    </div>
+    <div class="card">
+        <label for="breakWord">Break Word</label>
+        <p id="firstWord3"></p>
+        <p id="secondWord3"></p>
+        <p id="thirdWord3"></p>
+        <p id="fourthWord3"></p>
+        <p id="fifthWord3"></p>
+    </div>
+    <div class="card">
+        <label for="breakWordWithLength">Break Word with Length</label>
+        <p id="firstWord4"></p>
+        <p id="secondWord4"></p>
+        <p id="thirdWord4"></p>
+        <p id="fourthWord4"></p>
+        <p id="fifthWord4"></p>
+    </div>
+    <script>
+        var word = 'JavaScript';
+        var second = 'is';
+        var third = 'awesome';
+        var fourth = 'and';
+        var fifth = 'I';
+        var sixth = 'love';
+        var seventh = 'it!';
+
+        var sentence = `${word} ${second} ${third} ${fourth} ${fifth} ${sixth} ${seventh}`;
+        document.getElementById("formSentence").innerHTML = sentence;
+
+        var kalimat = 'wow JavaScript is so cool';
+        var contohKataPertama = kalimat.substring(0, 3);
+        var kataKedua = kalimat.substring(4, 14);
+        var kataKetiga = kalimat.substring(15, 17);
+        var kataKeempat = kalimat.substring(18, 20);
+        var kataKelima = kalimat.substring(21, 25);
+
+        document.getElementById("firstWord").innerHTML = "First Word: " + contohKataPertama;
+        document.getElementById("secondWord").innerHTML = "Second Word: " + kataKedua;
+        document.getElementById("thirdWord").innerHTML = "Third Word: " + kataKetiga;
+        document.getElementById("fourthWord").innerHTML = "Fourth Word: " + kataKeempat;
+        document.getElementById("fifthWord").innerHTML = "Fifth Word: " + kataKelima;
+
+        var kalimat3 = 'wow JavaScript is so cool';
+        var contohKataPertama3 = kalimat3.substring(0, 3);
+        var kataKedua3 = kalimat3.substring(4, 14);
+        var kataKetiga3 = kalimat3.substring(15, 17);
+        var kataKeempat3 = kalimat3.substring(18, 20);
+        var kataKelima3 = kalimat3.substring(21, 25);
+
+        document.getElementById("firstWord3").innerHTML = "First Word: " + contohKataPertama3;
+        document.getElementById("secondWord3").innerHTML = "Second Word: " + kataKedua3;
+        document.getElementById("thirdWord3").innerHTML = "Third Word: " + kataKetiga3;
+        document.getElementById("fourthWord3").innerHTML = "Fourth Word: " + kataKeempat3;
+        document.getElementById("fifthWord3").innerHTML = "Fifth Word: " + kataKelima3;
+
+        var kalimat4 = 'wow JavaScript is so cool';
+        var contohKataPertama4 = kalimat4.substr(0, 3);
+        var kataKedua4 = kalimat4.substr(4, 10);
+        var kataKetiga4 = kalimat4.substr(15, 2);
+        var kataKeempat4 = kalimat4.substr(18, 2);
+        var kataKelima4 = kalimat4.substr(21, 4);
+        var panjangKataPertama4 = contohKataPertama4.length;
+
+        document.getElementById("firstWord4").innerHTML = "First Word: " + contohKataPertama4 + ', with length: ' + panjangKataPertama4;
+        document.getElementById("secondWord4").innerHTML = "Second Word: " + kataKedua4 + ', with length: ' + kataKedua4.length;
+        document.getElementById("thirdWord4").innerHTML = "Third Word: " + kataKetiga4 + ', with length: ' + kataKetiga4.length;
+        document.getElementById("fourthWord4").innerHTML = "Fourth Word: " + kataKeempat4 + ', with length: ' + kataKeempat4.length;
+        document.getElementById("fifthWord4").innerHTML = "Fifth Word: " + kataKelima4 + ', with length: ' + kataKelima4.length;
+    </script>
+</body>
+
+</html>
