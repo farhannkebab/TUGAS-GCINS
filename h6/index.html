@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ronald gacorrrr</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js"
+        integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand">Ronald Pasar Malam</a>
+            <form class="form-inline" id="formItem">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" id="keyword" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchItem">Search</button>
+            </form>
+            <button class="btn btn-primary" id="cart"><i class="fas fa-shopping-cart"></i>(0)</button>
+        </nav>
+        <div class="row">
+            <div class="row col-md-12 mt-2" id="listBarang">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Component Card dari Bootstrap -->
+    <div class="container">
+        <div class="row">
+            <div class="col-4 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://assets.jamtangan.com/images/product/alexandre-christie/ACF-9205-MCBEPBA/1m.webp"
+                        class="card-img-top" height="auto" width="auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" id="itemName">Alexandre Christie AC 9205 MC BEPBA Man Sport Black Dial
+                            Black Stainless Steel Strap</h5>
+                        <p class="card-text" id="itemDesc">Deskripsi barang</p>
+                        <p class="card-text">Rp1.785.000</p>
+                        <a href="#" class="btn btn-primary addToCart" data-name="Product 1" data-price="10">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://assets.jamtangan.com/images/product/alexandre-christie/ACF-6455-MCBBRBA/1m.webp"
+                        class="card-img-top" height="auto" width="auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" id="itemName">Alexandre Christie AC 6455 MC BBRBA Chronograph Black Dial
+                            Stainless Steel Strap</h5>
+                        <p class="card-text" id="itemDesc">Deskripsi barang</p>
+                        <p class="card-text">RRp1.332.000 </p>
+                        <a href="#" class="btn btn-primary addToCart" data-name="Product 2" data-price="15">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://assets.jamtangan.com/images/product/alexandre-christie/ACF-9392-LHRREBA/1m.webp"
+                        class="card-img-top" height="auto" width="auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" id="itemName">Alexandre Christie Digi AC 9392 LH RREBA Digital Dial Red
+                            Rubber Strap
+                        </h5>
+                        <p class="card-text" id="itemDesc">Deskripsi barang</p>
+                        <p class="card-text">Rp552.000</p>
+                        <a href="#" class="btn btn-primary addToCart" data-name="Product 3" data-price="20">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 mt-5">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://assets.jamtangan.com/images/product/alexandre-christie/ACF-5013-LDBRGLN/1m.webp"
+                        class="card-img-top" height="auto" width="auto" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title" id="itemName">Alexandre Christie Classic Steel AC 5013 LD BRGLN Ladies
+                            Rose Gold Dial Rose Gold St Steel Strap</h5>
+                        <p class="card-text" id="itemDesc">Deskripsi barang</p>
+                        <p class="card-text">Rp1.190.000</p>
+                        <a href="#" class="btn btn-primary addToCart" data-name="Product 4" data-price="25">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function() {
+        let cartItems = [];
+
+        // Menambahkan produk ke keranjang belanja
+        $(".addToCart").click(function(e) {
+            e.preventDefault();
+            const productName = $(this).data("name");
+            const productPrice = $(this).data("price");
+            cartItems.push({ name: productName, price: productPrice });
+            updateCart();
+        });
+
+        // Memperbarui tampilan keranjang belanja
+        function updateCart() {
+            $("#cart").html(`<i class="fas fa-shopping-cart"></i>(${cartItems.length})`);
+        }
+
+        // Mencari produk
+        $("#formItem").submit(function(e) {
+            e.preventDefault();
+            const keyword = $("#keyword").val().toLowerCase();
+            $(".card").each(function() {
+                const productName = $(this).find(".card-title").text().toLowerCase();
+                if (productName.includes(keyword)) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            });
+        });
+    });
+</script>
+</html>
